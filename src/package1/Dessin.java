@@ -12,7 +12,7 @@ import javax.swing.JPanel;
      * stocke la liste des trains ajoutées Ã  cette zone de dessin.
      */
     private final List<IObjetDessinable> odjDss = new CopyOnWriteArrayList();
-
+    //private final List<IObjetAnimable> odjAnn= new CopyOnWriteArrayList();
     /**
      * retourne la largeur de la zone de dessin.
      *
@@ -82,7 +82,9 @@ import javax.swing.JPanel;
     public void animer() {
         //  dessiner les Objets que contient le dessin
         for (IObjetDessinable c : odjDss) {
-        	c.deplacer();
+        	if (c instanceof IObjetAnimable) { ((IObjetAnimable) c).deplacer();}
+        	
+        	
             
         }
     }

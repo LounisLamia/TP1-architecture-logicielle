@@ -9,6 +9,9 @@ import javax.swing.JFrame;
 import javax.swing.WindowConstants;
 public class LancerApp1 {
 
+	private static final String Color = null;
+
+
 	public static void main(String[] args) throws IOException {
 		
 		BufferedImage imgVador= ImageIO.read(new File("images/person2.png"));
@@ -40,7 +43,13 @@ public class LancerApp1 {
 		Visage unvisage = new Visage(d, 200, 100, 100, 120);
 		d.ajouterObjet(unvisage);
 		
+		Etoile etoile = new Etoile(200,100,50,10,new Color(0,(float) Math.random(),0),new Color(0,(float) Math.random(),0));
+		d.ajouterObjet(etoile);
 		
+		PolygoneRegulier polygone= new PolygoneRegulier(6,300,200,50,10,new Color(0,0,0),new Color(0,0,0));
+		d.ajouterObjet(polygone);
+		
+				
 		while(true) {
 		// la zone de dessin se réaffiche
 		d.repaint();
