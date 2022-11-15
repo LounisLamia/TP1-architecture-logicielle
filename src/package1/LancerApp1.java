@@ -49,16 +49,16 @@ public class LancerApp1 {
 		PolygoneRegulier polygone= new PolygoneRegulier(6,300,200,50,10,new Color(0,0,0),new Color(0,0,0));
 		d.ajouterObjet(polygone);
 		
-		Etoile etoilejeune = new Etoile(200,100,50,10,new Color((float) Math.random(),(float) Math.random(),0 ),new Color((float) Math.random(),(float) Math.random(),0));
+		//Etoile etoilejeune = new Etoile(200,100,50,10,new Color((float) Math.random(),(float) Math.random(),0 ),new Color((float) Math.random(),(float) Math.random(),0));
          
-		AnimationForme animationforme =new AnimationForme(etoilejeune,new MvtCirculaire(250,250,180,0,5));
+		//AnimationForme animationforme =new AnimationForme(etoilejeune,new MvtCirculaire(250,250,180,0,5));
 		
-		d.ajouterObjet(animationforme);
+		//d.ajouterObjet(animationforme);
 		
-		PolygoneRegulier polygonegris = new PolygoneRegulier(6,300,200,50,10,new Color((float) Math.random(),(float) Math.random(),(float) Math.random()),new Color((float) Math.random(),(float) Math.random(),(float) Math.random()));
-		AnimationForme animation =new AnimationForme(polygonegris,new MvtCirculaire(250,250,100,0,5));
+		//PolygoneRegulier polygonegris = new PolygoneRegulier(6,300,200,50,10,new Color((float) Math.random(),(float) Math.random(),(float) Math.random()),new Color((float) Math.random(),(float) Math.random(),(float) Math.random()));
+		//AnimationForme animation =new AnimationForme(polygonegris,new MvtCirculaire(250,250,100,0,5));
 		
-		d.ajouterObjet(animation);
+		//d.ajouterObjet(animation);
 		
 				
 				
