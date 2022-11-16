@@ -9,7 +9,7 @@ import javax.swing.JFrame;
 import javax.swing.WindowConstants;
 public class LancerApp1 {
 
-	private static final String Color = null;
+	//private static final String Color = null;
 
 
 	public static void main(String[] args) throws IOException {
@@ -40,25 +40,31 @@ public class LancerApp1 {
 		}
 		//
 		
-		Visage unvisage = new Visage(d, 200, 100, 100, 120);
-		d.ajouterObjet(unvisage);
+		//Visage unvisage = new Visage(d, 200, 100, 100, 120);
+		//d.ajouterObjet(unvisage);
 		
-		Etoile etoile = new Etoile(200,100,50,10,new Color(0,(float) Math.random(),0),new Color(0,(float) Math.random(),0));
+		Etoile etoile = new Etoile(200,100,50,10,Color.GREEN,Color.GREEN);
 		d.ajouterObjet(etoile);
 		
 		PolygoneRegulier polygone= new PolygoneRegulier(6,300,200,50,10,new Color(0,0,0),new Color(0,0,0));
 		d.ajouterObjet(polygone);
 		
-		Etoile etoilejeune = new Etoile(200,100,50,10,new Color((float) Math.random(),(float) Math.random(),0 ),new Color((float) Math.random(),(float) Math.random(),0));
+		Etoile etoilejeune = new Etoile(200,100,50,10,Color.YELLOW,Color.YELLOW);
          
-		AnimationForme animationforme =new AnimationForme(etoilejeune,new MvtCirculaire(250,250,180,0,5));
+		AnimationForme animationforme =new AnimationForme(etoilejeune,new MvtCirculaire(220,220,180,0,5));
 		
 		d.ajouterObjet(animationforme);
 		
-		PolygoneRegulier polygonegris = new PolygoneRegulier(6,300,200,50,10,new Color((float) Math.random(),(float) Math.random(),(float) Math.random()),new Color((float) Math.random(),(float) Math.random(),(float) Math.random()));
-		AnimationForme animation =new AnimationForme(polygonegris,new MvtCirculaire(250,250,100,0,5));
-		
+		PolygoneRegulier polygonegris = new PolygoneRegulier(6,300,200,50,10,Color.GRAY,Color.GRAY);
+		AnimationForme animation =new AnimationForme(polygonegris,new MvtCirculaire(200,200,100,0,5));
+
 		d.ajouterObjet(animation);
+		
+		//Visage visage= new Visage(d, 200, 100, 100, 120);
+		AnimationForme visage= new AnimationForme(new Visage(d, 200, 100, 100, 120),new MvtCirculaire(250,250,100,0,5));
+		d.ajouterObjet(visage);
+		
+		
 		
 				
 				

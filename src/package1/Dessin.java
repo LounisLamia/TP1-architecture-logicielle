@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 	/**
      * stocke la liste des trains ajoutées Ã  cette zone de dessin.
      */
-    private final List<IObjetDessinable> odjDss = new CopyOnWriteArrayList();
+    private final List<IObjetDessinable> odjDss = new CopyOnWriteArrayList<IObjetDessinable>();
     //private final List<IObjetAnimable> odjAnn= new CopyOnWriteArrayList();
     /**
      * retourne la largeur de la zone de dessin.
